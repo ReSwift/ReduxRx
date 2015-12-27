@@ -12,6 +12,9 @@ import ReduxKitRxSwift
 
 // MARK: - State
 
+/**
+ Mock State
+ */
 struct State {
     let count: Int
     let sendStatus: String!
@@ -19,6 +22,9 @@ struct State {
 
 // MARK: - Actions
 
+/**
+ Increment by the payload value
+ */
 struct IncrementAction: StandardAction {
     let meta: Any?
     let error: Bool
@@ -31,7 +37,9 @@ struct IncrementAction: StandardAction {
     }
 }
 
-
+/**
+ Mock ObservableAction
+ */
 struct TestObservableAction: ObservableAction {
     typealias PayloadType = Int
 
@@ -51,17 +59,16 @@ struct TestObservableAction: ObservableAction {
         self.rawPayload = rawPayload
     }
 
-    func replacePayload(payload: Observable<Action>) -> ObservableAction {
+    func replacePayload(payload: Observable<Action>) -> TestObservableAction {
         return self.dynamicType.init(meta: self.meta, error: self.error, rawPayload: payload)
     }
 
     static func Payload(success: Bool = true) -> Observable<Action> {
         return create { observer in
 
-            if (success) {
+            if success {
                 observer.on(.Next(TestObservableSuccessAction()))
-            }
-            else {
+            } else {
                 observer.on(.Error(TestObservableErrorAction()))
             }
 
@@ -72,18 +79,27 @@ struct TestObservableAction: ObservableAction {
     }
 }
 
-struct TestObservableSuccessAction: SimpleStandardAction{
+/**
+ Succes signal of the TestObservableAction
+ */
+struct TestObservableSuccessAction: SimpleStandardAction {
     let meta: Any? = nil
     let error: Bool = false
     let rawPayload: String = "Success"
 }
 
+/**
+ Error signal of the TestObservableAction
+ */
 struct TestObservableErrorAction: ObservableActionError {
     let meta: Any? = nil
     let rawPayload: String = "Error"
 }
 
-enum TestObservableError: ErrorType{
+/**
+ Error value of the TestObservableAction
+ */
+enum TestObservableError: ErrorType {
     case ObservableFailed
 }
 
@@ -97,7 +113,14 @@ func reducer(state: State? = nil, action: Action) -> State {
     )
 }
 
-/// Add IncrementAction payload values to the previous value
+/**
+ Add IncrementAction payload values to the previous value
+
+ - parameter previousState: Int? (defaults to 0)
+ - parameter action:        Action
+
+ - returns: Int
+ */
 func countReducer(previousState: Int? = nil, action: Action) -> Int {
     let state = previousState ?? 0
 
@@ -109,11 +132,18 @@ func countReducer(previousState: Int? = nil, action: Action) -> Int {
     }
 }
 
+/**
+ Set the state to an ObservableAction payload if dispatched
 
-func observableReducer(previousState: String?, action: Action) -> String{
+ - parameter previousState: String? (defaults to "")
+ - parameter action:        Action
+
+ - returns: String
+ */
+func observableReducer(previousState: String?, action: Action) -> String {
     var state = previousState ?? ""
 
-    switch action{
+    switch action {
     case let action as TestObservableSuccessAction:
         state = action.rawPayload
         return state
@@ -128,12 +158,17 @@ func observableReducer(previousState: String?, action: Action) -> String{
 
 // MARK: - Middleware
 
-/// Logs dispatched actions to the console for debugging
+/**
+ ReduxKit middleware that logs dispatched actions to the console for debugging
+
+ - parameter store: Store<State>
+
+ - returns: DispatchTransformer
+*/
 func loggerMiddleware<State>(store: Store<State>) -> DispatchTransformer {
-    return { next in
-        { action in
-            print(action.type)
-            return next(action)
+    return { next in { action in
+        print(action.type)
+        return next(action)
         }
     }
 }

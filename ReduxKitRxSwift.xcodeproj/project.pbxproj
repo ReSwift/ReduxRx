@@ -11,10 +11,6 @@
 		7398B0161C25FEF5000ED3FD /* ReduxKitRxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7398B00B1C25FEF5000ED3FD /* ReduxKitRxSwift.framework */; };
 		7398B0411C25FF34000ED3FD /* ReduxKitRxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7398B0371C25FF34000ED3FD /* ReduxKitRxSwift.framework */; };
 		7398B05D1C25FF4B000ED3FD /* ReduxKitRxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7398B0531C25FF4B000ED3FD /* ReduxKitRxSwift.framework */; };
-		7398B06B1C26007D000ED3FD /* ReduxKitRxSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7398B06A1C26007D000ED3FD /* ReduxKitRxSwift.swift */; };
-		7398B06C1C26007D000ED3FD /* ReduxKitRxSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7398B06A1C26007D000ED3FD /* ReduxKitRxSwift.swift */; };
-		7398B06D1C26007D000ED3FD /* ReduxKitRxSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7398B06A1C26007D000ED3FD /* ReduxKitRxSwift.swift */; };
-		7398B06E1C26007D000ED3FD /* ReduxKitRxSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7398B06A1C26007D000ED3FD /* ReduxKitRxSwift.swift */; };
 		7398B0741C2602BF000ED3FD /* ReduxKitRxSwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7398B01A1C25FEF5000ED3FD /* ReduxKitRxSwiftTests.swift */; };
 		7398B0791C260489000ED3FD /* ReduxKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7398B0771C260489000ED3FD /* ReduxKit.framework */; };
 		7398B07A1C260489000ED3FD /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7398B0781C260489000ED3FD /* RxSwift.framework */; };
@@ -42,10 +38,26 @@
 		73A125DC1C2A187400E4E928 /* ObservableAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73A125DA1C2A187400E4E928 /* ObservableAction.swift */; };
 		73A125DD1C2A187400E4E928 /* ObservableAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73A125DA1C2A187400E4E928 /* ObservableAction.swift */; };
 		73A125DE1C2A187400E4E928 /* ObservableAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73A125DA1C2A187400E4E928 /* ObservableAction.swift */; };
-		73A125E01C2A196600E4E928 /* ObservableMiddleware.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73A125DF1C2A196600E4E928 /* ObservableMiddleware.swift */; };
-		73A125E11C2A196600E4E928 /* ObservableMiddleware.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73A125DF1C2A196600E4E928 /* ObservableMiddleware.swift */; };
-		73A125E21C2A196600E4E928 /* ObservableMiddleware.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73A125DF1C2A196600E4E928 /* ObservableMiddleware.swift */; };
-		73A125E31C2A196600E4E928 /* ObservableMiddleware.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73A125DF1C2A196600E4E928 /* ObservableMiddleware.swift */; };
+		73A125E01C2A196600E4E928 /* observableMiddleware.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73A125DF1C2A196600E4E928 /* observableMiddleware.swift */; };
+		73A125E11C2A196600E4E928 /* observableMiddleware.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73A125DF1C2A196600E4E928 /* observableMiddleware.swift */; };
+		73A125E21C2A196600E4E928 /* observableMiddleware.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73A125DF1C2A196600E4E928 /* observableMiddleware.swift */; };
+		73A125E31C2A196600E4E928 /* observableMiddleware.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73A125DF1C2A196600E4E928 /* observableMiddleware.swift */; };
+		73E4859A1C2F7BAD00462A12 /* Store+init.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73E485991C2F7BAD00462A12 /* Store+init.swift */; };
+		73E4859B1C2F7BAD00462A12 /* Store+init.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73E485991C2F7BAD00462A12 /* Store+init.swift */; };
+		73E4859C1C2F7BAD00462A12 /* Store+init.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73E485991C2F7BAD00462A12 /* Store+init.swift */; };
+		73E4859D1C2F7BAD00462A12 /* Store+init.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73E485991C2F7BAD00462A12 /* Store+init.swift */; };
+		73E4859F1C2F7BE000462A12 /* setupStoreBacking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73E4859E1C2F7BE000462A12 /* setupStoreBacking.swift */; };
+		73E485A01C2F7BE000462A12 /* setupStoreBacking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73E4859E1C2F7BE000462A12 /* setupStoreBacking.swift */; };
+		73E485A11C2F7BE000462A12 /* setupStoreBacking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73E4859E1C2F7BE000462A12 /* setupStoreBacking.swift */; };
+		73E485A21C2F7BE000462A12 /* setupStoreBacking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73E4859E1C2F7BE000462A12 /* setupStoreBacking.swift */; };
+		73E485A41C2F7CA000462A12 /* ReduxRxDisposable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73E485A31C2F7CA000462A12 /* ReduxRxDisposable.swift */; };
+		73E485A51C2F7CA000462A12 /* ReduxRxDisposable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73E485A31C2F7CA000462A12 /* ReduxRxDisposable.swift */; };
+		73E485A61C2F7CA000462A12 /* ReduxRxDisposable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73E485A31C2F7CA000462A12 /* ReduxRxDisposable.swift */; };
+		73E485A71C2F7CA000462A12 /* ReduxRxDisposable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73E485A31C2F7CA000462A12 /* ReduxRxDisposable.swift */; };
+		73EF72FC1C2F4F4E00F5E57D /* createStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73EF72FB1C2F4F4E00F5E57D /* createStore.swift */; };
+		73EF72FD1C2F515600F5E57D /* createStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73EF72FB1C2F4F4E00F5E57D /* createStore.swift */; };
+		73EF72FE1C2F515700F5E57D /* createStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73EF72FB1C2F4F4E00F5E57D /* createStore.swift */; };
+		73EF72FF1C2F515800F5E57D /* createStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73EF72FB1C2F4F4E00F5E57D /* createStore.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -84,7 +96,6 @@
 		7398B0401C25FF34000ED3FD /* ReduxKitRxSwiftTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ReduxKitRxSwiftTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7398B0531C25FF4B000ED3FD /* ReduxKitRxSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ReduxKitRxSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7398B05C1C25FF4B000ED3FD /* ReduxKitRxSwiftTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ReduxKitRxSwiftTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		7398B06A1C26007D000ED3FD /* ReduxKitRxSwift.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReduxKitRxSwift.swift; sourceTree = "<group>"; };
 		7398B06F1C26022A000ED3FD /* Cartfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Cartfile; sourceTree = "<group>"; };
 		7398B0761C260480000ED3FD /* Cartfile.resolved */ = {isa = PBXFileReference; lastKnownFileType = text; path = Cartfile.resolved; sourceTree = "<group>"; };
 		7398B0771C260489000ED3FD /* ReduxKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ReduxKit.framework; path = Carthage/Build/iOS/ReduxKit.framework; sourceTree = "<group>"; };
@@ -101,7 +112,11 @@
 		73A125D51C2A067600E4E928 /* ReduxKitRxSwift.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; path = ReduxKitRxSwift.podspec; sourceTree = "<group>"; };
 		73A125D61C2A149900E4E928 /* ObservableMiddlewareTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ObservableMiddlewareTests.swift; sourceTree = "<group>"; };
 		73A125DA1C2A187400E4E928 /* ObservableAction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ObservableAction.swift; sourceTree = "<group>"; };
-		73A125DF1C2A196600E4E928 /* ObservableMiddleware.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ObservableMiddleware.swift; sourceTree = "<group>"; };
+		73A125DF1C2A196600E4E928 /* observableMiddleware.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = observableMiddleware.swift; sourceTree = "<group>"; };
+		73E485991C2F7BAD00462A12 /* Store+init.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Store+init.swift"; sourceTree = "<group>"; };
+		73E4859E1C2F7BE000462A12 /* setupStoreBacking.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = setupStoreBacking.swift; sourceTree = "<group>"; };
+		73E485A31C2F7CA000462A12 /* ReduxRxDisposable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReduxRxDisposable.swift; sourceTree = "<group>"; };
+		73EF72FB1C2F4F4E00F5E57D /* createStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = createStore.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -211,9 +226,12 @@
 			children = (
 				7398B00E1C25FEF5000ED3FD /* ReduxKitRxSwift.h */,
 				7398B0101C25FEF5000ED3FD /* Info.plist */,
+				73EF72FB1C2F4F4E00F5E57D /* createStore.swift */,
 				73A125DA1C2A187400E4E928 /* ObservableAction.swift */,
-				73A125DF1C2A196600E4E928 /* ObservableMiddleware.swift */,
-				7398B06A1C26007D000ED3FD /* ReduxKitRxSwift.swift */,
+				73A125DF1C2A196600E4E928 /* observableMiddleware.swift */,
+				73E485A31C2F7CA000462A12 /* ReduxRxDisposable.swift */,
+				73E4859E1C2F7BE000462A12 /* setupStoreBacking.swift */,
+				73E485991C2F7BAD00462A12 /* Store+init.swift */,
 			);
 			path = ReduxKitRxSwift;
 			sourceTree = "<group>";
@@ -309,6 +327,7 @@
 				7398B0081C25FEF5000ED3FD /* Headers */,
 				7398B0091C25FEF5000ED3FD /* Resources */,
 				7398B0981C261059000ED3FD /* ShellScript */,
+				73FDC45D1C2FB377006AB4EC /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -347,6 +366,7 @@
 				7398B0271C25FF1F000ED3FD /* Headers */,
 				7398B0281C25FF1F000ED3FD /* Resources */,
 				7398B09A1C261090000ED3FD /* ShellScript */,
+				73FDC45F1C2FB38C006AB4EC /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -366,6 +386,7 @@
 				7398B0341C25FF34000ED3FD /* Headers */,
 				7398B0351C25FF34000ED3FD /* Resources */,
 				7398B09B1C2610AB000ED3FD /* ShellScript */,
+				73FDC45E1C2FB384006AB4EC /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -404,6 +425,7 @@
 				7398B0501C25FF4B000ED3FD /* Headers */,
 				7398B0511C25FF4B000ED3FD /* Resources */,
 				7398B08D1C260619000ED3FD /* ShellScript */,
+				73E485A91C2FA1D000462A12 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -647,6 +669,58 @@
 			shellPath = /bin/sh;
 			shellScript = "/usr/local/bin/carthage copy-frameworks";
 		};
+		73E485A91C2FA1D000462A12 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\n    swiftlint\nelse\n    echo \"SwiftLint does not exist, download from https://github.com/realm/SwiftLint\"\nfi";
+		};
+		73FDC45D1C2FB377006AB4EC /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\n    swiftlint\nelse\n    echo \"SwiftLint does not exist, download from https://github.com/realm/SwiftLint\"\nfi";
+		};
+		73FDC45E1C2FB384006AB4EC /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\n    swiftlint\nelse\n    echo \"SwiftLint does not exist, download from https://github.com/realm/SwiftLint\"\nfi";
+		};
+		73FDC45F1C2FB38C006AB4EC /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\n    swiftlint\nelse\n    echo \"SwiftLint does not exist, download from https://github.com/realm/SwiftLint\"\nfi";
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -654,9 +728,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				73E4859A1C2F7BAD00462A12 /* Store+init.swift in Sources */,
 				73A125DB1C2A187400E4E928 /* ObservableAction.swift in Sources */,
-				7398B06B1C26007D000ED3FD /* ReduxKitRxSwift.swift in Sources */,
-				73A125E01C2A196600E4E928 /* ObservableMiddleware.swift in Sources */,
+				73E485A41C2F7CA000462A12 /* ReduxRxDisposable.swift in Sources */,
+				73EF72FC1C2F4F4E00F5E57D /* createStore.swift in Sources */,
+				73A125E01C2A196600E4E928 /* observableMiddleware.swift in Sources */,
+				73E4859F1C2F7BE000462A12 /* setupStoreBacking.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -674,9 +751,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				73E4859D1C2F7BAD00462A12 /* Store+init.swift in Sources */,
 				73A125DE1C2A187400E4E928 /* ObservableAction.swift in Sources */,
-				7398B06C1C26007D000ED3FD /* ReduxKitRxSwift.swift in Sources */,
-				73A125E31C2A196600E4E928 /* ObservableMiddleware.swift in Sources */,
+				73E485A71C2F7CA000462A12 /* ReduxRxDisposable.swift in Sources */,
+				73EF72FF1C2F515800F5E57D /* createStore.swift in Sources */,
+				73A125E31C2A196600E4E928 /* observableMiddleware.swift in Sources */,
+				73E485A21C2F7BE000462A12 /* setupStoreBacking.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -684,9 +764,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				73E4859C1C2F7BAD00462A12 /* Store+init.swift in Sources */,
 				73A125DD1C2A187400E4E928 /* ObservableAction.swift in Sources */,
-				7398B06D1C26007D000ED3FD /* ReduxKitRxSwift.swift in Sources */,
-				73A125E21C2A196600E4E928 /* ObservableMiddleware.swift in Sources */,
+				73E485A61C2F7CA000462A12 /* ReduxRxDisposable.swift in Sources */,
+				73EF72FE1C2F515700F5E57D /* createStore.swift in Sources */,
+				73A125E21C2A196600E4E928 /* observableMiddleware.swift in Sources */,
+				73E485A11C2F7BE000462A12 /* setupStoreBacking.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -704,9 +787,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				73E4859B1C2F7BAD00462A12 /* Store+init.swift in Sources */,
 				73A125DC1C2A187400E4E928 /* ObservableAction.swift in Sources */,
-				7398B06E1C26007D000ED3FD /* ReduxKitRxSwift.swift in Sources */,
-				73A125E11C2A196600E4E928 /* ObservableMiddleware.swift in Sources */,
+				73E485A51C2F7CA000462A12 /* ReduxRxDisposable.swift in Sources */,
+				73EF72FD1C2F515600F5E57D /* createStore.swift in Sources */,
+				73A125E11C2A196600E4E928 /* observableMiddleware.swift in Sources */,
+				73E485A01C2F7BE000462A12 /* setupStoreBacking.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -752,6 +838,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
@@ -805,6 +892,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
